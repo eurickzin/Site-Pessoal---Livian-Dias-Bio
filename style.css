@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* IMPORTACAO DE FONTE */
+
+.color-1 { background-color: #4169e1; }
+.color-2 { background-color: #718fe9; }
+.color-3 { background-color: #a0b4f0; }
+.color-4 { background-color: #d0daf8; }
+.color-5 { background-color: #ffffff; }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #4169e1;
+    padding: 0 auto;
+}
+.wrapper{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color:#ffffff;
+    padding: 24px;
+    border-bottom: 1px solid #a0b4f0;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div{
+    /* border: 1px solid black; */
+    width: 30%;
+}
+
+.name-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-logo h1{
+    font-size: 1.5rem;
+}
+
+.topics-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topics-top li{
+    list-style: none;
+    transition: .2s;
+}
+
+.topics-top a{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.topics-top li:hover, .topics-top a:hover{
+    transform: scale(1.10);
+    color: #4169e1;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.social-media a{
+    color: black;
+    transition: .2s;
+}
+
+.social-media i{
+    margin: 0 20px;
+    font-size: 35px;
+
+}
+
+.social-media a:hover{
+    transform: scale(1.20);
+}
+
+/* FIM DO HEADER */
+
+main{
+    /* border: 1px solid red; */
+    width: 1280px;
+    background-color: white;
+}
+
+.about-me{
+    display: flex;
+    justify-content: space-around;
+    height: 40rem;
+}
+
+.presentation{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid green; */
+    justify-content: center;
+    gap: 90px 0;
+}
+
+.presentation h3{
+    text-align: center;
+    /* border: 1px solid green; */
+    font-size: 2rem;
+
+}
+
+.presentation h3 span{
+    font-size: 1em;
+}
+
+
+
+.presentation h1{
+    text-align: center;
+    /* border: 1px solid red; */
+    font-size: 2.5rem;
+    /* white-space: nowrap; */
+    z-index: 100;
+
+}
+
+.presentation .ponto{
+    font-size: 60px;
+    color: #319a26;
+}
+
+.presentation .biologa{
+    color: #319a26;
+
+}
+
+.presentation .mar{
+    color: #4169e1;
+}
+
+.presentation .onorte{
+    color: white;
+}
+
+.buttons-about-me{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid purple; */
+    gap: 0 3rem;
+
+}
+
+.btn-contatos{
+    width: 250px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #4169e1;
+    color: white;
+    transition: .2s;
+    transition: .3s ease-in-out;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.btn-contatos:hover{
+    /* background: linear-gradient(to right, #4169e1, #718fe9); */
+    /* color: black; */
+    transform: scale(1.05);
+    box-shadow: 0 0 9px 2px #4169e1;
+}
+
+.btn-portfolio{
+    width: 250px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #4169e1;
+    color: white;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+    font-size: 20px;
+}
+
+.btn-portfolio:hover{
+   /* background: linear-gradient(to right, #4169e1, #718fe9); */
+    /* color: black; */
+    transform: scale(1.05);
+    box-shadow: 0 0 9px 2px #4169e1;
+}
+
+
+.photo-profile{
+    width: 40%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.photo-profile img{
+    max-width: 90%;
+    max-height: 90%;
+}
