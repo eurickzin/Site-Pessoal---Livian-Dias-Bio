@@ -9,6 +9,8 @@
 .color-5 { background-color: #ffffff; }
 
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -43,6 +45,7 @@ header{
 }
 
 nav{
+    /* border: 1px solid red; */
     width: 1280px;
     display: flex;
     justify-content: space-between;
@@ -54,16 +57,20 @@ nav div{
 }
 
 .name-logo{
+    /* border: 1px solid blue; */
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
 .name-logo h1{
     font-size: 1.5rem;
+    text-align: start;
 }
 
 .topics-top{
+    /* border: 1px solid green; */
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,8 +95,10 @@ nav div{
 }
 
 .social-media{
+    gap: 15px;
+    /* border: 1px solid red; */
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 
 
@@ -101,7 +110,7 @@ nav div{
 }
 
 .social-media i{
-    margin: 0 20px;
+    /* margin: 0 20px; */
     font-size: 35px;
 
 }
@@ -116,6 +125,7 @@ main{
     /* border: 1px solid red; */
     width: 1280px;
     background-color: white;
+    box-shadow: 0 0 40px 20px #002081;
 }
 
 .about-me{
@@ -194,6 +204,7 @@ main{
     font-size: 20px;
 
 }
+
 .btn-contatos:hover{
     /* background: linear-gradient(to right, #4169e1, #718fe9); */
     /* color: black; */
@@ -232,6 +243,18 @@ main{
 }
 
 .photo-profile img{
+    position: relative;
     max-width: 90%;
     max-height: 90%;
+    border-radius: 50%;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top:50px;
+    }
 }
